@@ -13,8 +13,8 @@ Try pimp my Option library add:
 
 Now we can convert Option or Try to Future and use them in for-comprehension:
 
-  val sumF: Future[Int] = for {
-    f1 <- Option(1).toFuture
-    f2 <- Try(1/1).toFuture
-    f3 <- Future(1/1)
-  } yield f1 + f2 + f3
+    val sumF: Future[Int] = for {
+      f1 <- Option(1).toFuture
+      f2 <- Try(1/1).toFuture
+      f3 <- Future(1/1)
+    } yield f1 + f2 + f3
